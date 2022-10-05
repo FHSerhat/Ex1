@@ -1,0 +1,13 @@
+import numpy as np
+def Function(A,B):
+    C = A@B
+    print("\n Solution:\n",C)
+print("Randomly generated matrices: ")
+valuesA = np.random.randint(0,10,9)
+valuesB = np.random.randint(0,10,9)
+A = np.array(valuesA).reshape(3, 3)
+print("Matrix A: \n",A)
+B = np.array(valuesB).reshape(3, 3)
+print("Matrix B: \n",B)
+    
+Function(A,B)
